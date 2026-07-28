@@ -1,0 +1,14 @@
+services:
+  bash-lab:
+    build: .
+    container_name: bash-practice-lab
+    working_dir: /lab/workspace
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./workspace:/lab/workspace
+      - ./data:/lab/data
+      - ./logs:/lab/logs
+    environment:
+      LAB_ENV: docker
+      APP_NAME: bash-practice

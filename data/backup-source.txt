@@ -1,0 +1,2 @@
+This file represents important application data.
+Practice creating backups without touching your real machine.
