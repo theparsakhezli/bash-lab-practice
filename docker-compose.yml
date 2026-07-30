@@ -2,6 +2,8 @@ services:
   bash-lab:
     build: .
     container_name: bash-practice-lab
+    mem_limit: 1g
+    cpus: 2
     working_dir: /lab/workspace
     stdin_open: true
     tty: true
